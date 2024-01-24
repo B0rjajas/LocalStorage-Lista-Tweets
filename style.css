@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+
+h1, h2 {
+    color: #333;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4c84af;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#lista-tweets {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.tweet {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+
+
+/*****/
+.error {
+    color: red;
+    font-weight: bold;
+    
+    /* Otros estilos que desees agregar */
+}
+
+
+/**BOTONELIMINAR**/
+
+.btnEliminar {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: 10%;
+}
+
+.btnEliminar:hover {
+    background-color: #e6452e;
+}
+
+
+
+/**Media Queries **/
+
+@media screen and (max-width: 450px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #contenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    
+}
